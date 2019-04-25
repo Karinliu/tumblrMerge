@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test</title>
+</head>
+<body>
+	<p>test</p>
+	<% if (data) { data.forEach(function(data) { %>
+                <p><%= data.tags %></p>
+                <img src="<%= data.pic %>" alt="">
+    <% })} %>
+
+        <div class="hidden" id="contentWrap">
+            <div id="users">
+            </div>
+            <ul id="messages"></ul>
+            <form class="message" action="">
+                <input id="m" autocomplete="off" />
+                <button>Send</button>
+            </form>
+        </div>
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+<script src="../index.js"></script>
+</html>

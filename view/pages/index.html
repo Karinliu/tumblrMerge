@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <div id="nickWrap">
+        <h1>Start here</h1>
+        <p id="nickError "></p>
+        <form id="nickForm" action="">
+            <label for="nickname">Enter a username</label>
+            <input placeholder="Naam" id="nickName" autocomplete="off"/>
+            <label for="hashtagName">Hashtag</label>
+            <input placeholder="Hashtag" id="hashtagName"/>
+            <button>Send</button>
+        </form>
+    </div>
+    <div id="allUsers" class="hidden">
+        <aside>
+            <div id="users">
+            </div>
+        </aside>
+        <section id="allImages">
+        </section>
+    </div>
+    <div id="contentWrap" class="hidden">
+        <aside>
+            <div id="users">
+            </div>
+        </aside>
+        <section class="element1">
+            <p id="hashtag">Hashtag</p>
+        </section>
+        <section class="element2">
+            <p id="hashtag">Hashtag</p>
+        </section>
+        <section class="element3">
+            <canvas id="myCanvas">
+                
+            </canvas>
+            <div>
+                <ul id="messages">
+                    
+                </ul>
+
+                <form class="message" action="">
+                    <input id="m" autocomplete="off" />
+                    <button>Send</button>
+                </form>
+            </div>
+        </section>
+    </div>
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+<script src="../index.js"></script>
+
+</html>
