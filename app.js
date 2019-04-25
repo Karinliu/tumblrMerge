@@ -163,4 +163,5 @@ app.get('/', function(req, res) {
     res.sendFile(__dirname + '/view/pages/index.html');
 });
 
-http.listen(1400, () => console.log(`Example app listening on port ${port}!`))
+// http.listen(1400, () => console.log(`Example app listening on port ${port}!`))
+http.listen(process.env.PORT || 1400)
