@@ -24,24 +24,46 @@
             <div id="users">
             </div>
         </aside>
-        <section id="allImages">
+          <section id="containerImages">
+            <section id="allTags">
+            </section>
+            <section id="allImages">
+            </section>
         </section>
     </div>
     <div id="contentWrap" class="hidden">
         <aside>
-            <div id="users">
+            <div id="usersRoom">
             </div>
         </aside>
         <section class="element1">
-            <p id="hashtag">Hashtag</p>
+            <!-- <p id="hashtag">Hashtag</p> -->
         </section>
         <section class="element2">
-            <p id="hashtag">Hashtag</p>
+            <!-- <p id="hashtag">Hashtag</p> -->
         </section>
         <section class="element3">
-            <canvas id="myCanvas">
+            <div id="canvascontainer">
+                <!-- <img src="../example.png" alt=""> -->
+            <!-- <canvas id="myCanvas" class="canvasImage"> -->
                 
-            </canvas>
+            <!-- </canvas> -->
+            </div>
+            <!-- <canvas id="dom"></canvas> -->
+            <form id="chooseColor" action="/">
+                <input type="radio" name="color" value="green" id="green">
+                <label for="green" class="green"></label>
+                <input type="radio" name="color" value="yellow" id="yellow">
+                <label for="yellow" class="yellow"></label>
+                <input type="radio" name="color" value="pink" id="pink">  
+                <label for="pink" class="pink"></label>
+                <input type="radio" name="color" value="blue" id="blue">                 
+                <label for="blue" class="blue"></label>
+                <input type="radio" name="color" value="nocolor" id="nocolor">            
+                <label for="nocolor" class="nocolor"></label>
+                <button id="buttonFilter">Add filter</button>
+                <a class="download-button" href="../mochi.jpg" download>Download Image</a>
+            </form>
             <div>
                 <ul id="messages">
                     
@@ -54,9 +76,11 @@
             </div>
         </section>
     </div>
-</body>
 <script src="/socket.io/socket.io.js"></script>
+<script src="../domvas.min.js"></script>
+<script src="../canvas2image.js"></script>
 <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
 <script src="../index.js"></script>
+</body>
 
 </html>
